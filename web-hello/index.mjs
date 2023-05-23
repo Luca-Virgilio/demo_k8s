@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-    const helloMessage = `Hello World from ${os.hostname()}`;
+    const helloMessage = `VERSION 2: Hello World from ${os.hostname()}`;
     console.log(`Request from ${req.ip}`);
     console.log(helloMessage);
     res.send(helloMessage);
